@@ -7,6 +7,7 @@ import { MdOutlineContactSupport } from "react-icons/md";
 export default function WhatIDo(){
     return (
         <section className="dark:bg-gray-900 py-10">
+            <h1>What I Do?</h1>
             <div className="flex flex-col gap-10">
                 <div className="flex flex-col gap-10 justify-center items-center">
                     <div>

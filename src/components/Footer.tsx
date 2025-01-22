@@ -15,7 +15,7 @@ export default function Footer(){
     
 
     return (
-        <section className="dark:bg-gray-800 bg-gradient-to-b from-gray-50 to-gray-100 pt-8 pb-5 border-t border-green-600 border-opacity-5">
+        <section className="dark:bg-gray-800 pt-8 pb-5 border-t border-green-600 border-opacity-5">
             <div className="px-5 pt-4 pb-2">
                 <div className="flex justify-between items-start">
                     <div>

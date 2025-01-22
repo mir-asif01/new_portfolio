@@ -11,6 +11,9 @@ export default function Skills(){
 
     return (
         <div className="w-full dark:bg-gray-900 bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+            
+            <h1>Skills</h1>
+
             <div className="py-10">
                 <InfiniteMovingCards items={frontend} speed="fast" direction="right"/>
             </div>
