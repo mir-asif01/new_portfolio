@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { GridBackgroundDemo } from "@/components/HeroSection";
 import ProjectsComponent from "@/components/Projects";
 import Skills from "@/components/Skills";
@@ -10,6 +11,7 @@ export default function Home() {
       <ProjectsComponent/>
       <Skills/>
       <WhatIDo/>
+      <Footer/>
     </section>
   );
 }
