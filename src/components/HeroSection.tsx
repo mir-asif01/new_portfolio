@@ -7,7 +7,7 @@ import { GoArrowRight } from "react-icons/go";
 export function GridBackgroundDemo() {
     const words = ["work","freelance","remote-job"]
   return (
-    <div className="min-h-screen w-full dark:bg-black bg-whhite  dark:bg-grid-white/[0.1] bg-grid-black/[0.2] relative p-10">
+    <div className="w-full dark:bg-black bg-whhite  dark:bg-grid-white/[0.1] bg-grid-black/[0.2] relative p-10">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="flex justify-between items-center mb-10">
