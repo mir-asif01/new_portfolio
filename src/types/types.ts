@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image"
+import { IconType } from "react-icons"
 
 export interface IProject {
     id : string
@@ -9,4 +10,9 @@ export interface IProject {
     techStack : string[],
     githubRepo? : string,
     live? : string
+}
+
+export interface ISkill {
+    name : string
+    logo : IconType
 }
