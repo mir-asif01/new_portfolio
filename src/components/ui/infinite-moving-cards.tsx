@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 import { IconType } from "react-icons";
 

@@ -1,4 +1,3 @@
-import { desc, img, span } from "framer-motion/client"
 import Image, { StaticImageData } from "next/image"
 
 interface ProjectCardProps {
