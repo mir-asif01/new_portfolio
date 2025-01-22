@@ -12,7 +12,7 @@ interface ProjectCardProps {
 }
 
 
-const ProjectCard:React.FC<ProjectCardProps> = ({id,image,title,description,tags,techStack})=>{
+const ProjectCard:React.FC<ProjectCardProps> = ({image,title,description,tags,techStack})=>{
     return (
         <div className="bg-gradient-to-tl from-gray-50 dark:from-gray-700 to-gray-100 dark:to-gray-800 rounded-lg shadow-md border border-green-400 border-opacity-20">
             <Image src={image} alt="project image" className="rounded-t-lg"/>
