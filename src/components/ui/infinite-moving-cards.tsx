@@ -1,8 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
-import { IconType } from "react-icons";
+import React, { ReactNode, useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
@@ -12,7 +11,7 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    logo?: IconType;
+    icon?: ReactNode;
     name?: string;
   }[];
   direction?: "left" | "right";
@@ -87,13 +86,14 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="max-w-full relative rounded-2xl border border-slate-700"
+            className="max-w-full relative"
             key={idx}
           >
             <blockquote>
               <div className="relative flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <span className="text-lg font-semibold px-2 py-1">
+                  <span className="text-lg font-semibold flex flex-col justify-center items-center">
+                    {item.icon}
                     {item.name}
                   </span>
                 </span>
