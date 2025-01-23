@@ -3,9 +3,10 @@ import { GoArrowUpRight } from "react-icons/go";
 import { FlipWords } from "./ui/flip-words";
 import { Highlight } from "./ui/hero-highlight";
 import { GoArrowRight } from "react-icons/go";
+import Link from "next/link";
 
 export function GridBackgroundDemo() {
-    const words = ["work","freelance","remote-job"]
+  const words = ["work","freelance","remote-job"]
   return (
     <div className="w-full dark:bg-black bg-whhite  dark:bg-grid-white/[0.1] bg-grid-black/[0.2] relative p-10">
       {/* Radial gradient for the container to give a faded look */}
@@ -13,7 +14,7 @@ export function GridBackgroundDemo() {
       <div className="flex justify-between items-center mb-10">
         <h1 className="font-semibold text-xl z-20">Asif</h1>
         <button className="border border-sky-400 px-2 py-1 rounded-full text-sm z-20 flex items-center gap-1">
-            <span>twitter</span>
+            <Link href={"https://x.com/curious_asif"} target="_blank">twitter</Link>
             <GoArrowUpRight/>
         </button>
       </div>
