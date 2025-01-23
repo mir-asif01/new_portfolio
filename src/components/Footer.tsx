@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 
 export default function Footer(){
+    
     const [time,setTime] = useState("")
     const getDate = new Date()
     useEffect(()=>{
@@ -12,7 +13,6 @@ export default function Footer(){
         },1000)
         return () => clearInterval(intervalId);
     })
-    
 
     return (
         <section className="dark:bg-gray-800 pt-8 pb-5 border-t border-green-600 border-opacity-5">

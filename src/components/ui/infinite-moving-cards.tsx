@@ -73,7 +73,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 overflow-hidden",
+        "scroller relative overflow-hidden",
         className
       )}
     >
@@ -91,7 +91,7 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <blockquote>
-              <div className="relative z-20 flex flex-row items-center">
+              <div className="relative flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <span className="text-lg font-semibold px-2 py-1">
                     {item.name}

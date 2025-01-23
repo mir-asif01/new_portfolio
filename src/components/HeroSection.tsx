@@ -31,7 +31,7 @@ export function GridBackgroundDemo() {
              specializing in modern web solutions using cutting-edge technologies
         </p>
         <button className="mx-auto mt-10 flex items-center gap-1 px-3 py-2 bg-gradient-to-bl from-violet-500 to-blue-500 rounded-full z-30">
-            <span className="z-40 text-white">lets work</span>
+            <Link href={"/send-email"} className="z-40 text-white">lets work</Link>
             <GoArrowRight className="z-40 text-white"/>
         </button>
       </div>
