@@ -3,12 +3,15 @@ import poster_img from "../../public/projectsImgs/poster.png"
 
 export const projects : IProject[] = [
     {
-        id: "project1",
+        id: "poster",
         image: poster_img,
         title: "Poster",
-        description: "A personal portfolio website to showcase my projects and skills.",
-        tags: ["portfolio", "frontend", "design"],
-        techStack: ["React", "Tailwind CSS", "JavaScript"],
+        live : "https://poster-app-fontend.vercel.app/",
+        client_repo : "https://github.com/mir-asif01/poster_app_frontend",
+        server_repo : "https://github.com/mir-asif01/poster_app-backend",
+        description: "Poster, a modern blog sharing platform.",
+        tags: ["backend","frontend"],
+        techStack: ["ReactJs", "Tailwind CSS", "ExpressJs","Mongoose"],
       },
       {
         id: "project2",

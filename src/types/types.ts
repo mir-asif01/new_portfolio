@@ -6,9 +6,10 @@ export interface IProject {
     image : StaticImageData
     title : string
     description : string
-    tags : string[],
+    tags? : string[],
     techStack : string[],
-    githubRepo? : string,
+    client_repo? : string,
+    server_repo? : string,
     live? : string
 }
 
