@@ -25,30 +25,77 @@ import { SiCloudinary } from "react-icons/si";
 import { RiFileUploadFill } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import Image from "next/image";
 
-export default function Skills(){
-    
-    const frontend = [{name:"html", icon: <FaHtml5 className="h-16 w-16"/>}, {name:"css", icon: <FaCss3Alt className="h-16 w-16"/>},{name:"javascript", icon: <IoLogoJavascript className="h-16 w-16"/>}, {name:"typescript", icon: <BiLogoTypescript className="h-16 w-16"/>},{name:"reactjs", icon: <RiReactjsLine className="h-16 w-16"/>}, {name:"nextjs", icon: <RiNextjsFill className="h-16 w-16"/>},{name:"tailwindcss", icon: <RiTailwindCssFill className="h-16 w-16"/>}]
+export default function Skills() {
+  const frontend = [
+    { name: "html", icon: <FaHtml5 className="h-16 w-16" /> },
+    { name: "css", icon: <FaCss3Alt className="h-16 w-16" /> },
+    { name: "javascript", icon: <IoLogoJavascript className="h-16 w-16" /> },
+    { name: "typescript", icon: <BiLogoTypescript className="h-16 w-16" /> },
+    { name: "reactjs", icon: <RiReactjsLine className="h-16 w-16" /> },
+    { name: "nextjs", icon: <RiNextjsFill className="h-16 w-16" /> },
+    { name: "tailwindcss", icon: <RiTailwindCssFill className="h-16 w-16" /> },
+  ];
 
+  const backend = [
+    { name: "nodejs", icon: <RiNodejsLine className="h-16 w-16" /> },
+    { name: "expressjs", icon: <SiExpress className="h-16 w-16" /> },
+    { name: "mongodb", icon: <SiMongodb className="h-16 w-16" /> },
+    { name: "mongoose", icon: <SiMongoose className="h-16 w-16" /> },
+    { name: "sql", icon: <TbFileTypeSql className="h-16 w-16" /> },
+    { name: "postgresql", icon: <BiLogoPostgresql className="h-16 w-16" /> },
+    { name: "mysql", icon: <TbBrandMysql className="h-16 w-16" /> },
+  ];
 
-    const backend = [{name:"nodejs",icon:<RiNodejsLine className="h-16 w-16"/>}, {name:"expressjs",icon:<SiExpress className="h-16 w-16"/>},{name:"mongodb",icon:<SiMongodb className="h-16 w-16"/>}, {name:"mongoose",icon:<SiMongoose className="h-16 w-16"/>},{name:"sql",icon:<TbFileTypeSql className="h-16 w-16"/>}, {name:"postgresql",icon:<BiLogoPostgresql className="h-16 w-16"/>},{name:"mysql",icon:<TbBrandMysql className="h-16 w-16"/>},]
+  const tool = [
+    { name: "cloudinary", icon: <SiCloudinary className="h-16 w-16" /> },
+    { name: "postman", icon: <SiPostman className="h-16 w-16" /> },
+    { name: "multer", icon: <RiFileUploadFill className="h-16 w-16" /> },
+    { name: "vercel", icon: <SiVercel className="h-16 w-16" /> },
+    { name: "git", icon: <FaGitAlt className="h-16 w-16" /> },
+    { name: "github", icon: <FaGithub className="h-16 w-16" /> },
+  ];
 
-    const tool = [{name:"cloudinary",icon:<SiCloudinary className="h-16 w-16"/>},{name:"postman",icon:<SiPostman className="h-16 w-16"/>}, {name:"multer",icon:<RiFileUploadFill className="h-16 w-16"/>},{name:"vercel",icon:<SiVercel className="h-16 w-16"/>}, {name:"git",icon:<FaGitAlt className="h-16 w-16"/>},{name:"github",icon:<FaGithub className="h-16 w-16"/>},]
+  return (
+    <div className="w-full dark:bg-gray-900 bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
+      <h1 className="text-center text-xl md:text-5xl mb-5">Skills</h1>
 
-    return (
-        <div className="w-full dark:bg-gray-900 bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2]">
-            
-            <h1 className="text-center text-xl">Skills</h1>
-
-            <div className="py-10">
-                <InfiniteMovingCards items={frontend} speed="fast" direction="right"/>
+      <div className="md:container mx-auto">
+        <div className="py-10 grid grid-cols-3 md:grid-cols-5 gap-2">
+          {frontend.map((s, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col justify-center items-center space-y-4"
+            >
+              <span>{s?.icon}</span>
+              <h1 className="font-semibold mt-1">{s?.name}</h1>
             </div>
-            <div className="py-10">
-                <InfiniteMovingCards items={backend} speed="fast" direction="left"/>
-            </div>
-            <div className="py-10">
-                <InfiniteMovingCards items={tool} speed="fast" direction="right"/>
-            </div>
+          ))}
         </div>
-    )
+        <div className="py-10 grid grid-cols-3 md:grid-cols-5 gap-2">
+          {backend.map((s, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col justify-center items-center space-y-4"
+            >
+              <span>{s?.icon}</span>
+              <h1 className="font-semibold mt-1">{s?.name}</h1>
+            </div>
+          ))}
+        </div>
+        <div className="py-10 grid grid-cols-3 md:grid-cols-5 gap-2">
+          {tool.map((s, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col justify-center items-center space-y-4"
+            >
+              <span>{s?.icon}</span>
+              <h1 className="font-semibold mt-1">{s?.name}</h1>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
