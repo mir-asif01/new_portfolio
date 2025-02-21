@@ -36,7 +36,7 @@ export function GridBackgroundDemo() {
           specializing in modern web solutions using cutting-edge technologies
         </p>
         <button className="mx-auto mt-10 flex items-center gap-1 px-4 py-2 bg-gradient-to-bl from-violet-700 to-blue-800 rounded-full md:text-xl">
-          <Link href={"/send-email"} className="z-40 text-white">
+          <Link href={"https://x.com/curious_asif"} className="z-40 text-white">
             lets work
           </Link>
           <GoArrowRight className="z-40 text-white" />

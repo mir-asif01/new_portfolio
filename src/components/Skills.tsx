@@ -1,5 +1,3 @@
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-
 //frontend skills
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
@@ -25,7 +23,6 @@ import { SiCloudinary } from "react-icons/si";
 import { RiFileUploadFill } from "react-icons/ri";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import Image from "next/image";
 
 export default function Skills() {
   const frontend = [

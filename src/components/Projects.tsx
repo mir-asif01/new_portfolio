@@ -13,6 +13,9 @@ export default function ProjectsComponent() {
             description={project?.description}
             tags={project?.tags}
             techStack={project?.techStack}
+            client_repo={project?.client_repo}
+            server_repo={project?.server_repo}
+            live={project?.live}
           ></ProjectCard>
         ))}
       </div>

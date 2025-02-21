@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
@@ -26,9 +27,20 @@ export default function Footer() {
               find me on
             </h1>
             <h1 className="flex gap-3">
-              <span className="">twitter</span>
-              <span className="">github</span>
-              <span className="">linkedIn</span>
+              <Link href={"https://x.com/curious_asif"} className="">
+                twitter
+              </Link>
+              <Link href={"https://github.com/mir-asif01"} className="">
+                github
+              </Link>
+              <Link
+                href={
+                  "https://www.linkedin.com/in/mir-kamrul-ahsan-asif-7a19a62b7/"
+                }
+                className=""
+              >
+                linkedIn
+              </Link>
             </h1>
           </div>
         </div>
